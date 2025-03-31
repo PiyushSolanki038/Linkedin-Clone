@@ -1,0 +1,256 @@
+.profile {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile__top {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.profile__background {
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  background: linear-gradient(135deg, #0073b1 0%, #0077b5 50%, #00a0dc 100%);
+  overflow: hidden;
+}
+
+.profile__background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1) 0px,
+    rgba(255, 255, 255, 0.1) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  opacity: 0.1;
+  mix-blend-mode: soft-light;
+}
+
+.profile__background::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.1));
+}
+
+.profile__info {
+  padding: 0 24px 24px;
+  position: relative;
+}
+
+.profile__pic {
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  border: 4px solid white;
+  position: absolute;
+  top: -76px;
+}
+
+.profile__details {
+  padding-top: 80px;
+}
+
+.profile__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 24px;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+  background: none;
+  cursor: pointer;
+}
+
+.profile__sections section {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.experience__item, .education__item {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.experience__item img, .education__item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.skill__item {
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.connections {
+  color: #0a66c2;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile__info h1 {
+  margin-top: 90px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile__info h2 {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 10px 0;
+}
+
+.profile__button {
+  background-color: #0a66c2;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 16px;
+  border: none;
+  font-weight: 600;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.profile__button.secondary {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.profile__about, .profile__experience {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.experience__item {
+  display: flex;
+  align-items: start;
+  margin-top: 16px;
+}
+
+.experience__item img {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+}
+
+.profile__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.signout-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 24px;
+  border: 1px solid #d11124;
+  color: #d11124;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.signout-button:hover {
+  background-color: rgba(209, 17, 36, 0.1);
+}
+
+.edit-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.edit-form input,
+.edit-form textarea {
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.edit-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.save-button,
+.cancel-button {
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+}
+
+.cancel-button {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  margin-left: 8px;
+}
+
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.edit-button.small {
+  padding: 4px;
+  border: none;
+  background: none;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.edit-button.small:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+}

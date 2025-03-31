@@ -1,0 +1,93 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  background-color: #f3f2ef;
+  min-height: 100vh;
+}
+
+.auth img {
+  height: 34px;
+  margin-bottom: 24px;
+}
+
+.auth__content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.auth__content h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.auth__content p {
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 24px;
+}
+
+.auth__content form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth__content input {
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.auth__content input:focus {
+  outline: none;
+  border-color: #0a66c2;
+}
+
+.auth__content button {
+  background-color: #0a66c2;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth__content button:hover {
+  background-color: #004182;
+}
+
+.auth__divider {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  line-height: 0.1em;
+  margin: 24px 0;
+}
+
+.auth__divider span {
+  background: white;
+  padding: 0 10px;
+}
+
+.auth__register, .auth__login {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.auth__register a, .auth__login a {
+  color: #0a66c2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth__register a:hover, .auth__login a:hover {
+  text-decoration: underline;
+}

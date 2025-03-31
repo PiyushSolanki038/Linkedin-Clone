@@ -1,0 +1,76 @@
+.jobs {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+}
+
+.jobs__sidebar {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  height: fit-content;
+}
+
+.jobs__options .option {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.jobs__options .option:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.jobs__options .option span {
+  margin-left: 8px;
+}
+
+.job__card {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.job__card img {
+  width: 56px;
+  height: 56px;
+  margin-right: 12px;
+}
+
+.job__info {
+  flex: 1;
+}
+
+.job__info h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.job__info p {
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 4px;
+}
+
+.job__card button {
+  padding: 6px 16px;
+  border-radius: 16px;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+  background-color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.job__card button:hover {
+  background-color: rgba(10, 102, 194, 0.1);
+}

@@ -1,0 +1,121 @@
+.messaging {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  height: calc(100vh - 100px);
+}
+
+.messaging__sidebar {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.messaging__header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.messaging__search {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.messaging__search input {
+  border: none;
+  margin-left: 8px;
+  width: 100%;
+}
+
+.chats__list {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.chat__item {
+  display: flex;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.chat__item:hover, .chat__item.active {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.chat__item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.messaging__main {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.chat__header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.chat__messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.chat__input {
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.chat__input input {
+  flex: 1;
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.chat__input button {
+  padding: 8px 16px;
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.no__chat__selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}

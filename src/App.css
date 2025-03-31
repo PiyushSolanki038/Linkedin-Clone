@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+
+.app__logo {
+  height: 34px;
+  object-fit: contain;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.app__header img {
+  margin-right: 10px;
+}
